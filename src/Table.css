@@ -1,0 +1,19 @@
+.th-clr{
+
+    background-color: rgb(255, 213, 0) !important;
+   
+}
+.todo-head{
+    text-align: center;
+    margin-top: 50px;
+    font-family:  monospace;
+}
+
+ .table{
+    margin-top: 50px;
+    border: solid 2px;
+ }
+ .container-fluid{
+    background-color: thistle;
+    height: 100vh;
+ }
