@@ -21,11 +21,11 @@ const TodoData = () => {
   
     data.forEach(element => {
         console.log('element=',element);
-        const newid = element.userId;
-        console.log('newid=',newid);
+        const id = element.userId;
+        console.log('id=',id);
 
-        if(!newArr[newid]){
-           newArr[newid]={
+        if(!newArr[id]){
+           newArr[id]={
             id:0,
             task:0,
             completedtask:0,
@@ -33,16 +33,16 @@ const TodoData = () => {
            }
         }
 
-       const Task = newArr[newid].task+=1;
+       const Task = newArr[id].task+=1;
        console.log('task=',Task);
-       newArr[newid].id = newid;
+       newArr[id].id = id;
     
         if(element.completed === true){
-            const completed = newArr[newid].completedtask+=1
+            const completed = newArr[id].completedtask+=1
             console.log('completed=',completed);
             
            }else if(element.completed === false){
-            const pending = newArr[newid].pendingtask+=1
+            const pending = newArr[id].pendingtask+=1
             console.log('pending=',pending);
             
            }  
